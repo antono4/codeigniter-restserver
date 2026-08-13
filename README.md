@@ -1,113 +1,76 @@
-# CodeIgniter RestServer
+<!-- README ini dihasilkan otomatis oleh workflow .github/workflows/generate-readme.yml -->
+<!-- Jangan edit manual; perubahan akan ditim pada run berikutnya. -->
 
-> **Created by Antono**
+<h1 align="center">Project 👋</h1>
 
+<p align="center">
+  <strong></strong>
+</p>
 
-[![StyleCI](https://github.styleci.io/repos/230589/shield?branch=master)](https://github.styleci.io/repos/230589)
+<p align="center">
+  <a href="https://github.com/antono4/codeigniter-restserver"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-antono4/codeigniter-restserver-blue?logo=github"></a>
+  <a href="https://antono4.github.io/codeigniter-restserver/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Online-success?logo=githubpages"></a>
+  <img alt="Files" src="https://img.shields.io/badge/Files-48-informational">
+  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-08-13 13:16:04 WIB-lightgrey">
+</p>
 
-A fully RESTful server implementation for CodeIgniter using one library, one config file and one controller.
+---
 
-## Requirements
+## 📖 Tentang
 
-- PHP 7.2 or greater
-- CodeIgniter 3.1.11+
+Repository **`codeigniter-restserver`** adalah situs web pribadi / portofolio yang diterbitkan melalui **GitHub Pages**. Situs utama berada di [`https://antono4.github.io/codeigniter-restserver/`](https://antono4.github.io/codeigniter-restserver/).
 
-## Installation
+## 🗂️ Struktur Proyek
 
-```sh
-composer require chriskacerguis/codeigniter-restserver
+```
+codeigniter-restserver/
+├── index.html          # Halaman utama (landing / portofolio)
+├── assets/             # Aset statis (css, js, img, vendor)
+├── forms/               # Form handler (PHP)
+└── language/              # 403 Forbidden  ->  https://antono4.github.io/codeigniter-restserver/language/
+└── src/              # 403 Forbidden  ->  https://antono4.github.io/codeigniter-restserver/src/
 ```
 
-## Usage
+## 🌐 Sub-Proyek / Demo
 
-CodeIgniter Rest Server is available on [Packagist](https://packagist.org/packages/chriskacerguis/codeigniter-restserver) (using semantic versioning), and installation via composer is the recommended way to install Codeigniter Rest Server. Just add this line to your `composer.json` file:
+Situs ini juga memuat beberapa sub-proyek (masing-masing punya `index.html` tersendiri):
 
-```json
-"chriskacerguis/codeigniter-restserver": "^3.1"
+| Folder | Demo Live | Keterangan |
+|--------|-----------|-----------|
+| [`language`](./language) | [https://antono4.github.io/codeigniter-restserver/language/](https://antono4.github.io/codeigniter-restserver/language/) | 403 Forbidden |
+| [`src`](./src) | [https://antono4.github.io/codeigniter-restserver/src/](https://antono4.github.io/codeigniter-restserver/src/) | 403 Forbidden |
+
+## 🛠️ Teknologi
+
+Berdasarkan isi repository, proyek ini menggunakan:
+
+- `HTML`
+- `PHP`
+
+> Total **48 file** terdeteksi di repository.
+
+## 🚀 Menjalankan Secara Lokal
+
+Karena ini situs statis (HTML/CSS/JS/PHP), cukup buka `index.html` di browser, atau jalankan server lokal:
+
+```bash
+# Tanpa dependency
+python3 -m http.server 8000
+# lalu buka http://localhost:8000
+
+# atau dengan PHP (untuk form handler di forms/)
+php -S localhost:8000
 ```
 
-or run
+## 📬 Kontak
 
-```sh
-composer require chriskacerguis/codeigniter-restserver
-```
+- GitHub: [antono4](https://github.com/antono4)
+- Situs: [https://antono4.github.io/codeigniter-restserver/](https://antono4.github.io/codeigniter-restserver/)
 
-Note that you will need to copy `rest.php` to your `config` directory (e.g. `application/config`)
+## 📄 Lisensi
 
-Step 1: Add this to your controller (should be before any of your code)
+Lihat berkas [`LICENSE`](./LICENSE) untuk informasi lisensi.
 
-```php
-use chriskacerguis\RestServer\RestController;
-```
+---
 
-Step 2: Extend your controller
-
-```php
-class Example extends RestController
-```
-
-## Basic GET example
-
-Here is a basic example. This controller, which should be saved as `Api.php`, can be called in two ways:
-
-* `http://domain/api/users/` will return the list of all users
-* `http://domain/api/users/id/1` will only return information about the user with id = 1
-
-```php
-<?php
-defined('BASEPATH') OR exit('No direct script access allowed');
-
-use chriskacerguis\RestServer\RestController;
-
-class Api extends RestController {
-
-    function __construct()
-    {
-        // Construct the parent class
-        parent::__construct();
-    }
-
-    public function users_get()
-    {
-        // Users from a data store e.g. database
-        $users = [
-            ['id' => 0, 'name' => 'John', 'email' => 'john@example.com'],
-            ['id' => 1, 'name' => 'Jim', 'email' => 'jim@example.com'],
-        ];
-
-        $id = $this->get( 'id' );
-
-        if ( $id === null )
-        {
-            // Check if the users data store contains users
-            if ( $users )
-            {
-                // Set the response and exit
-                $this->response( $users, 200 );
-            }
-            else
-            {
-                // Set the response and exit
-                $this->response( [
-                    'status' => false,
-                    'message' => 'No users were found'
-                ], 404 );
-            }
-        }
-        else
-        {
-            if ( array_key_exists( $id, $users ) )
-            {
-                $this->response( $users[$id], 200 );
-            }
-            else
-            {
-                $this->response( [
-                    'status' => false,
-                    'message' => 'No such user found'
-                ], 404 );
-            }
-        }
-    }
-}
-```
+<sub>README ini di-generate otomatis pada **2026-08-13 13:16:04 WIB** oleh GitHub Actions .</sub>
