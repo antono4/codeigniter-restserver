@@ -1,76 +1,26 @@
-<!-- README ini dihasilkan otomatis oleh workflow .github/workflows/generate-readme.yml -->
-<!-- Jangan edit manual; perubahan akan ditim pada run berikutnya. -->
+# codeigniter-restserver
 
-<h1 align="center">Project 👋</h1>
 
-<p align="center">
-  <strong></strong>
-</p>
 
-<p align="center">
-  <a href="https://github.com/antono4/codeigniter-restserver"><img alt="GitHub repo" src="https://img.shields.io/badge/GitHub-antono4/codeigniter-restserver-blue?logo=github"></a>
-  <a href="https://antono4.github.io/codeigniter-restserver/"><img alt="Live Demo" src="https://img.shields.io/badge/Live%20Demo-Online-success?logo=githubpages"></a>
-  <img alt="Files" src="https://img.shields.io/badge/Files-52-informational">
-  <img alt="Updated" src="https://img.shields.io/badge/Updated-2026-09-09 18:51:55 WIB-lightgrey">
-</p>
+## 📋 Overview
 
----
+This repository contains **52 files** and is built with the following technologies:
 
-## 📖 Tentang
+Not detected
 
-Repository **`codeigniter-restserver`** adalah situs web pribadi / portofolio yang diterbitkan melalui **GitHub Pages**. Situs utama berada di [`https://antono4.github.io/codeigniter-restserver/`](https://antono4.github.io/codeigniter-restserver/).
+## 🚀 Quick Start
 
-## 🗂️ Struktur Proyek
+## ✨ Features
 
-```
-codeigniter-restserver/
-├── index.html          # Halaman utama (landing / portofolio)
-├── assets/             # Aset statis (css, js, img, vendor)
-├── forms/               # Form handler (PHP)
-└── language/              # 403 Forbidden  ->  https://antono4.github.io/codeigniter-restserver/language/
-└── src/              # 403 Forbidden  ->  https://antono4.github.io/codeigniter-restserver/src/
-```
+- 📝 Auto-generated documentation
 
-## 🌐 Sub-Proyek / Demo
+## 🛠️ Technologies
 
-Situs ini juga memuat beberapa sub-proyek (masing-masing punya `index.html` tersendiri):
+Not detected
 
-| Folder | Demo Live | Keterangan |
-|--------|-----------|-----------|
-| [`language`](./language) | [https://antono4.github.io/codeigniter-restserver/language/](https://antono4.github.io/codeigniter-restserver/language/) | 403 Forbidden |
-| [`src`](./src) | [https://antono4.github.io/codeigniter-restserver/src/](https://antono4.github.io/codeigniter-restserver/src/) | 403 Forbidden |
+## 📄 License
 
-## 🛠️ Teknologi
-
-Berdasarkan isi repository, proyek ini menggunakan:
-
-- `HTML`
-- `PHP`
-
-> Total **52 file** terdeteksi di repository.
-
-## 🚀 Menjalankan Secara Lokal
-
-Karena ini situs statis (HTML/CSS/JS/PHP), cukup buka `index.html` di browser, atau jalankan server lokal:
-
-```bash
-# Tanpa dependency
-python3 -m http.server 8000
-# lalu buka http://localhost:8000
-
-# atau dengan PHP (untuk form handler di forms/)
-php -S localhost:8000
-```
-
-## 📬 Kontak
-
-- GitHub: [antono4](https://github.com/antono4)
-- Situs: [https://antono4.github.io/codeigniter-restserver/](https://antono4.github.io/codeigniter-restserver/)
-
-## 📄 Lisensi
-
-Lihat berkas [`LICENSE`](./LICENSE) untuk informasi lisensi.
+MIT License
 
 ---
-
-<sub>README ini di-generate otomatis pada **2026-09-09 18:51:55 WIB** oleh GitHub Actions .</sub>
+*Last updated: 2026-09-09 21:21:09 WIB*
