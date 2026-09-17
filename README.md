@@ -1,1 +1,26 @@
-Last updated: 2026-09-17 08:49:51 WIB
+# codeigniter-restserver
+
+
+
+## 📋 Overview
+
+This repository contains **52 files** and is built with the following technologies:
+
+Not detected
+
+## 🚀 Quick Start
+
+## ✨ Features
+
+- 📝 Auto-generated documentation
+
+## 🛠️ Technologies
+
+Not detected
+
+## 📄 License
+
+MIT License
+
+---
+*Last updated: 2026-09-17 12:29:33 WIB*
